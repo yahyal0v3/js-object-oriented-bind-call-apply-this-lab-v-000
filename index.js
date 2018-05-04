@@ -10,3 +10,7 @@ function setThisWithCall(fn, name, arg) {
 function setThisWithApply(fn, name, arg) {
   return fn.apply(name, [...arg])
 }
+
+function returnNewFunctionOf(fn, name) {
+  return fn.bind(name)
+}
